@@ -1,0 +1,20 @@
+# This type of file is meant to be an extension of existing ignore files, using the same syntax as them, to increase backwards compatibility
+
+# The biggest question for this type of file is how the sections would be implemented.
+# If it was markdown, then you could use the "#" for sections, but that would make all existing comments in ignore files backwards incompatible, so that would not be great, especially as the point of this type of file was to keep as much backwards compatibility as possible.
+
+# The idea I settled on for just now is using `* name` to denote the beginning of a section. Everything after a section heading, and before another would be included in that section, with `name` being the name of the library/app/framework/etc that uses it.
+
+* git
+
+.idea
+boringstuff/
+node_modules/
+
+* jshint
+
+node_modules/
+
+* docker
+
+node_modules/
