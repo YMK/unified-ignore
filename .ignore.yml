@@ -1,0 +1,11 @@
+git:
+  - .idea
+  - boringstuff/
+  - node_modules
+
+jshint:
+  - node_modules/
+ 
+
+docker: 
+  - node_modules/
